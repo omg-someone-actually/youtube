@@ -1,0 +1,76 @@
+body {
+  background-color: whitesmoke;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  color: #474747;
+}
+
+.hover-about {
+  opacity: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  transition: all .5s ease-in-out;
+}
+
+.title:hover, + .hover-about {
+  opacity: 1;
+}
+
+.video-form {
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+  gap: 1rem;
+}
+
+.video-input {
+  width: 20rem;
+}
+
+.video-submit {
+  margin: none;
+}
+
+.video {
+  padding-top: 6rem;
+  display: block;
+  margin: 0 auto;
+  width: 50rem;
+  height: 30rem;
+}
+
+.video::cue {
+  background-color: rgba(148, 142, 142, .75);
+  outline-style: solid;
+  outline-color: black;
+  outline-width: .25rem;
+  color: whitesmoke;
+}
+
+.video, .video-source {
+  overflow: hidden;
+  outline: none;
+  border: none;
+  position: fixed; right: 0; bottom: 0;
+  min-width: 100%; min-height: 100%;
+  width: auto; height: auto; z-index: -100;
+  background: url(polina.jpg) no-repeat;
+  background-size: cover;
+}
+
+.search {
+  all: unset;
+  margin-top: 10rem;
+  display: flex;
+  width: 50%;
+  text-align: center;
+}
+
+.search:hover, .search:focus {
+  color: yellow;
+}

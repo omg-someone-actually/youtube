@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enter Video</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+  <div class="about">
+    <h2 class='title'>YT Video Searcher</h2>
+    <p class='hover-about'>If Youtube is blocked on your device, enter the search query and find videos here!</p>
+  </div>
+    <form class='video-form' method="post">
+      <input placeholder='Enter Search' class='video-input' type="text" name='search'>
+      <input type="submit" class="video-submit">
+    </form>
+</body>
+</html>
